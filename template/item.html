@@ -1,4 +1,15 @@
-<div class="item">
-	<div class="title"></div>
-	
+<div class="item">	
+	<input type="checkbox" id="{{item.id}}" ng-model="item.checked"> 
+	<label for="{{item.id}}" ng-switch="item.title">
+		<span ng-switch-when="">Empty Task</span>
+		<span ng-switch-default  ng-bind="item.title"></span>
+	</label>	
+	<div>
+		<label class="lbldes">Summary :</label><input type="text" ng-model="item.title" placeholder="Input the summary of the task"> 
+		<br>
+		<label class="lbldes">Descriptioin :</label><textarea  ng-model="item.description"  placeholder="Input the detail info of the task"></textarea>
+		<br>
+ 		<label class="lbldes">Log :</label><textarea ng-model="item.log" disabled></textarea>
+ 		<br>
+	</div>
 </div>

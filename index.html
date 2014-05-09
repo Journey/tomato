@@ -1,10 +1,21 @@
 <html>
 	<head>
 		<title>番茄工作法</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script type='text/javascript' src="lib/angular.js"></script>		
 	</head>
-	<body>
+	<body ng-app="tomato">
+		<div ng-controller="itemCtr">
+			<div toolbar></div>
+			<div ng-repeat="item in items">
+				<div task item="item"></div>
+			</div>
+			
+		</div>
 		
-		<script type='text/javascript' src="js/main.js"></script>		
+		<script type='text/javascript' src="js/main.js"></script>	
+		<script type='text/javascript' src="js/directive.js"></script>	
 	</body>
 </html>

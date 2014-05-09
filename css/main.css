@@ -1,0 +1,22 @@
+input[type="checkbox"]{
+	display: none;
+}
+.lbldes{
+	display: inline-block;
+	padding: 0 6px;
+	min-width: 120px;
+	text-align:  right;
+}
+.item input ~ div{
+	display: none;
+}
+.item input:checked ~ div{
+	display: block;
+}
+.toolbar span{
+	cursor: pointer;
+	padding: 12px;
+	font-size: 2rem;
+
+}
+
