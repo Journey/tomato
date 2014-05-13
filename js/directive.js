@@ -29,7 +29,6 @@
 					var target = evt.target;
 					if(target.nodeName === "SPAN"){
 						scope.$emit(target.dataset["type"]);
-						scope.$broadcast(target.dataset["type"]);
 					}
 				});
 			}

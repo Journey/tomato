@@ -8,11 +8,12 @@
 	</head>
 	<body ng-app="tomato">
 		<div ng-controller="itemCtr">
-			<div toolbar></div>
+			<form ng-submit="addNewTask()">
+				<input type="text" placehodler="输入任务" autofocus ng-model="newTask">
+			</form>
 			<div ng-repeat="item in items">
 				<div task item="item"></div>
-			</div>
-			
+			</div>			
 		</div>
 		
 		<script type='text/javascript' src="js/main.js"></script>	
